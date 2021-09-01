@@ -404,7 +404,7 @@ class Embed:
         return EmbedProxy(getattr(self, '_image', {}))  # type: ignore
 
     @image.setter
-    def image(self: E, *, url: Any):
+    def image(self: E, url: Any):
         self._image = {
             'url': str(url),
         }
@@ -454,7 +454,7 @@ class Embed:
         return EmbedProxy(getattr(self, '_thumbnail', {}))  # type: ignore
 
     @thumbnail.setter
-    def thumbnail(self: E, *, url: Any):
+    def thumbnail(self: E, url: Any):
         """Sets the thumbnail for the embed content.
         """
 
