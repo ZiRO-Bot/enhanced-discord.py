@@ -455,17 +455,12 @@ class Embed:
 
     @thumbnail.setter
     def thumbnail(self: E, url: Any):
-        """Sets the thumbnail for the embed content.
-        """
-
         if url is EmptyEmbed:
             del self._thumbnail
         else:
             self._thumbnail = {
                 'url': str(url),
             }
-
-        return
 
     @thumbnail.deleter
     def thumbnail(self):
